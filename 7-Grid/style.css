@@ -1,0 +1,55 @@
+main {
+    display: grid;
+    font-family: sans-serif;
+    height: 100vh;
+    grid-gap: 10px;
+
+    /*especificar pos de las areas*/
+    grid-template-areas: 
+        "Header"
+        "Contenido"
+        "Izquierda"
+        "Derecha"
+        "Footer";
+}
+
+main > * {
+    background-color: #1F618D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*nombrando areas*/
+header {
+    grid-area: Header;
+}
+
+aside:first-of-type {
+    grid-area: Izquierda;
+}
+
+article {
+    grid-area: Contenido;
+}
+
+aside:last-of-type {
+    grid-area: Derecha;
+}
+
+footer {
+    grid-area: Footer;
+}
+
+/*responsive*/
+
+@media (min-width: 500px){
+    main {
+        grid-template-areas: 
+            "Header Header Derecha"
+            "Izquierda Contenido Derecha"
+            "Izquierda Footer Derecha";
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 2fr 5fr 1fr;
+    }
+}

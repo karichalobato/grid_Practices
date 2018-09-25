@@ -1,0 +1,26 @@
+main{
+    display: grid;
+    grid-gap: 10px;
+    height: 100vh;
+    grid-template-columns: repeat(auto-fit, minmax(30px, auto));
+}
+
+main > *{
+    order: 1;
+}
+
+div {
+    display: flex;
+    background-color: darkgreen;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+
+}
+
+div:nth-child(4){
+    background-color: darkgoldenrod;
+    color: white;
+    order: 1;
+}

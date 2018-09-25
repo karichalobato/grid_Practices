@@ -1,0 +1,44 @@
+main {
+    height: 100vh;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows: repeat(4,100px);
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    background-color: #D35400;
+}
+
+div:nth-child(10) {
+    background-color: blue;
+  /*  grid-column-start: 3;
+    grid-column-end: 5;*/
+    grid-column: 3/-1;
+}
+
+div:nth-child(6) {
+    background-color: blue;
+    grid-column: 2/3;
+    grid-row: 2/4;
+}
+/* flexbox y grid en perfecta armonia.
+@media (max-width: 600px) {
+    div:nth-child(10) {
+        background-color: blue;
+      /*  grid-column-start: 3;
+        grid-column-end: 5;*/
+       /* grid-column: 3/-1;/*
+    }
+    
+    div:nth-child(6) {
+        background-color: blue;
+        grid-column: 2/3;
+        grid-row: 2/4;
+    }
+
+}*/
+

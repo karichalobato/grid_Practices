@@ -1,0 +1,44 @@
+main {
+    display: grid;
+    height: 100vh;
+    grid-gap: 10px;
+
+    grid-template-columns: 
+        [Aside-start] 1fr
+        [Contenido-start] 2fr;
+
+    grid-template-rows:
+        [Header-start] 1fr
+        [Contenido-start] 2fr
+        [Footer-start] 1fr;
+
+}
+
+
+main > * {
+    font-family: sans-serif;
+    background-color:#A93226;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*
+header {
+    grid-column: Aside-start / span 2;
+}
+
+footer {
+    grid-column: Aside-start / -1;
+}*/
+
+header {
+    grid-column: Aside-start / span 2;
+}
+
+aside {
+    grid-row: Contenido-start / span 2;
+}
+
+footer {
+    grid-column: Contenido-start;
+}

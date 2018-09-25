@@ -1,0 +1,16 @@
+main {
+    height: 100vh;
+    display: grid;
+    grid-gap: 10px;
+    /*grid-template-columns: 1fr 2fr;*/
+    
+
+}
+
+main > *{
+    font-family: sans-serif;
+    background-color: #EC7063;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

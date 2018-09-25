@@ -1,0 +1,17 @@
+main {
+    display: grid;
+    height: 100vh;
+    grid-gap: 5px;
+    font-family: sans-serif;
+    grid: 
+        /*filas / columnas*/
+        10fr 5fr/ auto-flow 2fr 8fr;
+    ;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F08080;
+}

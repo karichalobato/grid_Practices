@@ -1,0 +1,27 @@
+main{
+    height: 100vh;
+    display: grid;
+    font-family: sans-serif;
+    color: aqua;
+    grid-gap: 10px;
+    grid-template-columns: 
+       /* repeat(8,1fr);*/
+
+       /*quiero 8 columnas con min y un max (limite) */
+      /* repeat(8, minmax(100px, 1fr));*/
+
+      /* 8 COL CON UN PATRON DOS (30PX Y MIN 16% Y MAX FLEXIBLE)*/
+    /*repeat(4, 30px minmax(10%, 1fr));*/
+    /* 8 col con un min marcado por el contenido y un maximo del 30%*/
+    /*repeat(8,minmax(min-content,30%));*/
+    /* 8 col con un max y min marcado por un contenido*/
+    repeat(8, minmax(min-content, max-content));
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E91E63;
+}
+
